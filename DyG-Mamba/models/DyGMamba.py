@@ -16,7 +16,7 @@ from mamba_ssm.models.mixer_seq_simple import _init_weights
 from .mamba_simple import Mamba, Block, MambaTimeDelta
 from utils.load_configs import ExperimentSetting
 try:
-    from mamba_ssm.ops.triton.layernorm import RMSNorm, layer_norm_fn, rms_norm_fn
+    from mamba_ssm.ops.triton.layer_norm import RMSNorm, layer_norm_fn, rms_norm_fn
 except ImportError:
     RMSNorm, layer_norm_fn, rms_norm_fn = None, None, None
 
